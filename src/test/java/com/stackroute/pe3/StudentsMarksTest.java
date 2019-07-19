@@ -61,13 +61,13 @@ public class StudentsMarksTest {
         assertEquals(actualResult, studentsMarks.gradeChecker(Integer.parseInt(null), new int[]{12, 34}));
     }
 
-//    @Test(expected = OutOfMemoryError.class)
-//    public void givenInvalidArrayElementsShouldThrowOutOfBoundException() {
-//        //act
-//        String actualResult = "Grade is between 0 and 100";
-//        //assert
-//        assertEquals(actualResult,studentsMarks.gradeChecker(4,new int[] {80, 50, 60, 70, 80}));
-//    }
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void givenInvalidArrayElementsShouldThrowOutOfBoundException() {
+        //act
+        String actualResult = "Grade is between 0 and 100";
+        //assert
+        assertEquals(actualResult,studentsMarks.gradeChecker(4,new int[] {80, 50, 60, 70, 80}));
+    }
 
     @Test
     public void givenNumberOfStudentsAndGradesOfEachStudentShouldReturnGradeIsBetween0And100Failure() {
