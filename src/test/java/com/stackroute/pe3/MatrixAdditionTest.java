@@ -12,7 +12,7 @@ public class MatrixAdditionTest {
 
     @Before
     public void setUp() {
-        matrixAddition = new MatrixAddition();
+        this.matrixAddition = new MatrixAddition();
     }
 
     @After
