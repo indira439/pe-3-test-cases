@@ -20,7 +20,7 @@ public class WeekDateTest {
     }
 
     @Test
-    public void ShouldReturnFirstDateOfTheWeek() {
+    public void givenCurrentDateShouldReturnFirstDateOfTheWeek() {
         //act
         String expectedResult = "Mon 15/07/2019";
         //assert
@@ -28,7 +28,7 @@ public class WeekDateTest {
     }
 
     @Test
-    public void ShouldReturnLastDateOfTheWeek() {
+    public void givenCurrentDateShouldReturnLastDateOfTheWeek() {
         //act
         String expectedResult = "Sun 21/07/2019";
         //assert
@@ -36,7 +36,7 @@ public class WeekDateTest {
     }
 
     @Test
-    public void ShouldReturnFirstDateOfTheWeekFailure() {
+    public void givenCurrentDateShouldReturnFirstDateOfTheWeekFailure() {
         //act
         String expectedResult = "Sun 15/07/2019";
         //assert
@@ -44,7 +44,7 @@ public class WeekDateTest {
     }
 
     @Test
-    public void ShouldReturnLastDateOfTheWeekFailure() {
+    public void givenCurrentDateShouldReturnLastDateOfTheWeekFailure() {
         //act
         String expectedResult = "Mon 21/07/2019";
         //assert
